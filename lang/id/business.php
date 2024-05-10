@@ -10,7 +10,8 @@ return [
     | The following language lines are used during registration of a business.
     |
     */
-    'register_and_get_started_in_minutes' => 'Untuk Aktivasi Demo Chat WA 087705022099',
+    'register_and_get_started_in_minutes' => '',
+    // 'register_and_get_started_in_minutes' => 'Untuk Aktivasi Demo Chat WA 085817069096',
     'business_name' => 'Nama Bisnis',
     'start_date' => 'Tanggal Mulai',
     'currency' => 'Mata Uang',
