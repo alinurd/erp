@@ -18,7 +18,7 @@ return [
     'currency_placeholder' => 'Pilih Mata Uang',
     'upload_logo' => 'Unggah Logo',
     'country' => 'Negara',
-    'state' => 'Negara',
+    'state' => 'Provinsi',
     'city' => 'Kota',
     'zip_code' => 'Kode Pos',
     'zip_code_placeholder' => 'Kode Pos',
