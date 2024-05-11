@@ -35,8 +35,8 @@
 				<!-- masukan rumus Kanan -->
 				<!-- <label>Jauh</label> -->
 				<div class="form-check form-group col-xs-12 col-sm-4 ">
-					<label>Posisi </label> 
-				  <br>
+					<label>RUMUS </label> 
+				   <br>
  					<div class="form-check col-xs-12 col-sm-6">
 						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
 						<label class="form-check-label" for="exampleRadios1">
@@ -50,19 +50,31 @@
 						</label>
 					</div>
 				</div>
-				<div class="form-group col-xs-12 col-sm-3 ">
-					<label>Kanan</label> 
-					<br>
-					<label class="form-label"></label>
+
+				<div class="form-check form-group col-xs-12 col-sm-12 ">
+  					<div class="form-check col-xs-12 col-sm-3">
+					 <label class="form-label">BKL [R]</label>
+					 <i class="fa fa-info-circle text-info hover-q no-print " aria-hidden="true" data-container="body" data-toggle="popover" data-placement="auto bottom" data-content="Pilih kekuatan lensa Kanan" data-html="true" data-trigger="hover" data-original-title=" Besaran Kekuatan Lensa" title=""></i>
 					{!! Form::select("products[$row_count][line_discount_type]", ['sph' => "SPH", 'cly' => "CLY", 'axis' => "AXIS"], $discount_type , ['class' => 'form-control row_discount_type']); !!}
+					</div>
+					<div class="form-check col-xs-12 col-sm-3">
+					<label class="form-label">SDO [R]</label><i class="fa fa-info-circle text-info hover-q no-print " aria-hidden="true" data-container="body" data-toggle="popover" data-placement="auto bottom" data-content="Masukan Satuan Diopsir Kanan" data-html="true" data-trigger="hover" data-original-title="Satuan Dioptri (D), " title=""></i>
+					{{ Form::text('title', old('title'), ['class' => 'form-control','id' => 'ukkanan', 'placeholder' => 'Ukuran ', 'required']) }}
 
+					</div>
+ 					<div class="form-check col-xs-12 col-sm-3">
+					 <label class="form-label">BKL [L]</label>
+					 <i class="fa fa-info-circle text-info hover-q no-print " aria-hidden="true" data-container="body" data-toggle="popover" data-placement="auto bottom" data-content="kekuatan lensa Kiri" data-html="true" data-trigger="hover" data-original-title=" Besaran Kekuatan Lensa" title=""></i>
+					{!! Form::select("products[$row_count][line_discount_type]", ['sph' => "SPH", 'cly' => "CLY", 'axis' => "AXIS"], $discount_type , ['class' => 'form-control row_discount_type']); !!}
+					</div>
+					<div class="form-check col-xs-12 col-sm-3">
+					<label class="form-label">SDO [L]</label>
+					<i class="fa fa-info-circle text-info hover-q no-print " aria-hidden="true" data-container="body" data-toggle="popover" data-placement="auto bottom" data-content="Masukan Satuan Diopsir  Kiri" data-html="true" data-trigger="hover" data-original-title="Satuan Dioptri (D)" title=""></i>
+					{{ Form::text('title', old('title'), ['class' => 'form-control','id' => 'ukkiri', 'placeholder' => 'Ukuran ', 'required']) }}
 
+					</div>
 				</div>
-				<div class="form-group col-xs-12 col-sm-3">
-					<label class="form-label"></label>
-					{{ Form::text('title', old('title'), ['class' => 'form-control','id' => 'role-title', 'placeholder' => 'Role Title', 'required']) }}
-
-				</div>
+				 
 
 				<!-- masukan rumus -->
 
@@ -83,7 +95,7 @@
 				<div class="form-group col-xs-12">
 					<label>@lang('lang_v1.description')</label>
 					<textarea class="form-control" name="products[{{$row_count}}][sell_line_note]" rows="3">{{$sell_line_note}}</textarea>
-					<p class="help-block">@lang('lang_v1.sell_line_description_help')</p>
+					<p class="help-block">Keterangan lainnya</p>
 				</div>
 			</div>
 		</div>
