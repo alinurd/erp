@@ -1354,5 +1354,9 @@ return [
     'price_group_price_type_tooltip' => 'Jika <b>Tetap</b> - harga yang dimasukkan akan digunakan. Jika <b>Persentase</b> - harga akan sebesar % dari harga jual default',
      'preparation_time_in_minutes' => 'Timer Staf Layanan / Waktu persiapan (Dalam menit)',
     'enter_dropdown_values' => 'Masukkan opsi dropdown, satu opsi per baris',
-     'delivery_note' => 'Surat Jalan'
+     'delivery_note' => 'Surat Jalan',
+     'rum_sph' => 'SPH',
+     'rum_cyl' => 'CYL',
+     'rum_axis' => 'AXIS',
+
 ];
